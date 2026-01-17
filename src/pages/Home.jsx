@@ -2,6 +2,10 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
 import collegeImg from "../assets/College.png"
+import img1 from "../assets/img1.jpg"
+import img2 from "../assets/img2.jpg"
+import img3 from "../assets/img3.jpg"
+
 
 export default function Home() {
   return (
@@ -17,7 +21,7 @@ export default function Home() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <div className="hero-overlay"></div>
-              <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&w=1600&q=80" className="d-block w-100 hero-img" alt="Campus Life" />
+              <img src={img1} className="d-block w-100 hero-img" alt="Campus Life" />
               <div className="carousel-caption">
                 <h1 className="display-3 fw-bold animate-up">Empowering Leaders of Tomorrow</h1>
                 <p className="lead animate-up-delay">Premier Institute for Administrative Services & Higher Education.</p>
@@ -29,7 +33,7 @@ export default function Home() {
             </div>
             <div className="carousel-item">
               <div className="hero-overlay"></div>
-              <img src="https://images.unsplash.com/photo-1524178232363-1fb28f74b671?auto=format&fit=crop&w=1600&q=80" className="d-block w-100 hero-img" alt="Education" />
+              <img src={img2} className="d-block w-100 hero-img" alt="Education" />
               <div className="carousel-caption text-center">
                 <h1 className="display-3 fw-bold">Excellence in Civil Services</h1>
                 <p className="lead">Expert guidance for UPSC, MPSC, and Competitive Exams.</p>
@@ -37,7 +41,7 @@ export default function Home() {
             </div>
             <div className="carousel-item">
               <div className="hero-overlay"></div>
-              <img src="https://images.unsplash.com/photo-1498243639159-00cd3e25a37b?auto=format&fit=crop&w=1600&q=80" className="d-block w-100 hero-img" alt="Library" />
+              <img src={img3} className="d-block w-100 hero-img" alt="Library" />
               <div className="carousel-caption text-end">
                 <h1 className="display-3 fw-bold">State-of-the-Art Campus</h1>
                 <p className="lead">Modern infrastructure designed for focused academic growth.</p>
