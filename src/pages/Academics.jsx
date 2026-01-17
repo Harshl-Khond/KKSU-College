@@ -1,5 +1,8 @@
 import React from "react";
 import "./Academics.css";
+import f1 from "../assets/f1.jpg";
+import f2 from "../assets/f2.jpg";
+import f3 from "../assets/f3.jpeg";
 
 export default function Academics() {
   const programmes = [
