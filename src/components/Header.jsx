@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import universityLogo from "../assets/university-logo.png";
-import collegeLogo from "../assets/college-logo.png";
+import collegeLogo from "../assets/College-logo.png";
 
 export default function Header() {
   return (
