@@ -5,11 +5,7 @@ import collegeImg from "../assets/College.png"
 import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 9ee24e17cf307b4e77b81fa7265975f06e6bd09c
 export default function Home() {
   return (
     <div className="home-wrapper">
