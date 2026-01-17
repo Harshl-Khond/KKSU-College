@@ -8,9 +8,6 @@ export default function Academics() {
   const programmes = [
     { name: "BA Civil Services", duration: "3 Years", intake: 60, eligibility: "12th Pass (Any Stream)", year: "2022" },
     { name: "Bachelor of Computer Application (BCA)", duration: "3 Years", intake: 60, eligibility: "12th Pass (Science/Commerce preferred)", year: "2023" },
-    // { name: "B.A. (Bachelor of Arts)", duration: "3 Years", intake: 120, eligibility: "12th Pass", year: "1985" },
-    // { name: "B.Sc. (Bachelor of Science)", duration: "3 Years", intake: 120, eligibility: "12th Science", year: "2000" },
-    // { name: "M.A. (Master of Arts)", duration: "2 Years", intake: 60, eligibility: "Graduation", year: "2010" },
   ];
 
   return (
@@ -19,7 +16,9 @@ export default function Academics() {
       <section className="academic-hero text-center text-white">
         <div className="container">
           <h1 className="display-4 fw-bold">Academic Excellence</h1>
-          <p className="lead">Empowering Students through Professional & Traditional Education</p>
+          <p className="lead">
+            Empowering Students through Professional & Traditional Education
+          </p>
         </div>
       </section>
 
@@ -30,6 +29,7 @@ export default function Academics() {
             <h2 className="title-text">Academic Programmes</h2>
             <div className="underline"></div>
           </div>
+
           <div className="table-responsive academic-card shadow-sm mt-4">
             <table className="table table-hover align-middle mb-0">
               <thead className="table-maroon text-white">
@@ -46,7 +46,9 @@ export default function Academics() {
                   <tr key={index}>
                     <td className="fw-bold text-maroon">{prog.name}</td>
                     <td>{prog.duration}</td>
-                    <td><span className="badge bg-teal">{prog.intake} Seats</span></td>
+                    <td>
+                      <span className="badge bg-teal">{prog.intake} Seats</span>
+                    </td>
                     <td>{prog.eligibility}</td>
                     <td>{prog.year}</td>
                   </tr>
@@ -60,71 +62,182 @@ export default function Academics() {
         <div className="row g-4 mb-5">
           <div className="col-lg-8">
             <div className="academic-card p-4">
-              <h3 className="sub-title"><i className="bi bi-diagram-3-fill"></i> Departments</h3>
+              <h3 className="sub-title">
+                <i className="bi bi-diagram-3-fill"></i> Departments
+              </h3>
+
               <div className="row mt-3">
                 <div className="col-md-6 border-end">
                   <h5 className="text-teal">Arts & Professional Studies</h5>
                   <ul className="dept-list">
                     <li>Civil Services Academy</li>
                     <li>Political Science & History</li>
-                    <li>Languages (Marathi/Hindi/English)</li>
+                    <li>Languages (Marathi / Hindi / English)</li>
                   </ul>
                 </div>
+
                 <div className="col-md-6">
                   <h5 className="text-teal">Science & Technology</h5>
                   <ul className="dept-list">
                     <li>Computer Applications (BCA)</li>
                     <li>Physics & Mathematics</li>
-                    <li>Life Sciences (Botany/Zoology)</li>
+                    <li>Life Sciences</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="col-lg-4">
             <div className="academic-card p-4 h-100 bg-light-maroon">
               <h3 className="sub-title">UGC Compliance</h3>
-              <p className="small text-muted">Mandatory Disclosure for NAAC/UGC Guidelines</p>
+              <p className="small text-muted">
+                Mandatory Disclosure as per NAAC / UGC Guidelines
+              </p>
+
               <div className="d-grid gap-2 mt-3">
                 <button className="btn btn-outline-maroon btn-sm d-flex justify-content-between align-items-center">
-                   Download Syllabus <i className="bi bi-file-earmark-pdf"></i>
+                  Download Syllabus <i className="bi bi-file-earmark-pdf"></i>
                 </button>
                 <button className="btn btn-outline-maroon btn-sm d-flex justify-content-between align-items-center">
-                   Program Outcomes (PO) <i className="bi bi-journal-text"></i>
+                  Program Outcomes (PO) <i className="bi bi-journal-text"></i>
                 </button>
                 <button className="btn btn-outline-maroon btn-sm d-flex justify-content-between align-items-center">
-                   Course Outcomes (CO) <i className="bi bi-check-circle"></i>
+                  Course Outcomes (CO) <i className="bi bi-check-circle"></i>
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* ===== 3. FACULTY INFORMATION ===== */}
+        {/* ===== 3. ACADEMIC LEADERSHIP (UPDATED) ===== */}
         <section>
           <div className="section-header">
             <h2 className="title-text">Academic Leadership</h2>
             <div className="underline"></div>
           </div>
+
           <div className="row g-4 mt-2">
-            {[1, 2, 3, 4].map((item) => (
-              <div className="col-6 col-md-4 col-lg-3" key={item}>
-                <div className="faculty-card text-center shadow-sm">
-                  <div className="img-box">
-                    <img src={`https://i.pravatar.cc/150?img=${item+15}`} alt="Faculty" />
-                  </div>
-                  <div className="p-3">
-                    <h6 className="mb-1 text-maroon fw-bold">Prof. Faculty Name</h6>
-                    <p className="text-muted small mb-1">M.Sc., SET/NET</p>
-                    <span className="badge bg-gold text-dark mb-2">H.O.D.</span>
-                    <p className="dept-label mb-0 text-uppercase">Dept. of BCA</p>
-                    <a href="mailto:dept@college.edu" className="mail-link mt-2">
-                      <i className="bi bi-envelope-at-fill"></i> Contact Email
-                    </a>
-                  </div>
+
+            {/* FACULTY 1 */}
+            <div className="col-6 col-md-4 col-lg-3">
+              <div className="faculty-card text-center shadow-sm">
+                <div className="img-box">
+                  <img
+                    src={f1}
+                    alt="Senior Faculty"
+                  />
+                </div>
+                <div className="p-3">
+                  <h6 className="mb-1 text-maroon fw-bold">
+                    Dr. R. S. Kulkarni
+                  </h6>
+                  <p className="text-muted small mb-1">
+                    M.Sc., Ph.D., SET
+                  </p>
+                  <span className="badge bg-gold text-dark mb-2">
+                    Head of Department
+                  </span>
+                  <p className="dept-label mb-0 text-uppercase">
+                    Computer Applications
+                  </p>
+                  <a
+                    href="mailto:bca@college.edu"
+                    className="mail-link mt-2"
+                  >
+                    <i className="bi bi-envelope-at-fill"></i> Contact Email
+                  </a>
                 </div>
               </div>
-            ))}
+            </div>
+
+            {/* FACULTY 2 */}
+            <div className="col-6 col-md-4 col-lg-3">
+              <div className="faculty-card text-center shadow-sm">
+                <div className="img-box">
+                  <img
+                    src={f2}
+                    alt="Faculty Member"
+                  />
+                </div>
+                <div className="p-3">
+                  <h6 className="mb-1 text-maroon fw-bold">
+                    Prof. S. A. Deshmukh
+                  </h6>
+                  <p className="text-muted small mb-1">
+                    M.A., NET
+                  </p>
+                  <span className="badge bg-gold text-dark mb-2">
+                    Senior Faculty
+                  </span>
+                  <p className="dept-label mb-0 text-uppercase">
+                    Political Science
+                  </p>
+                  <a href="mailto:arts@college.edu" className="mail-link mt-2">
+                    <i className="bi bi-envelope-at-fill"></i> Contact Email
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* FACULTY 3 */}
+            <div className="col-6 col-md-4 col-lg-3">
+              <div className="faculty-card text-center shadow-sm">
+                <div className="img-box">
+                  <img
+                    src={f3}
+                    alt="Senior Professor"
+                  />
+                </div>
+                <div className="p-3">
+                  <h6 className="mb-1 text-maroon fw-bold">
+                    Dr. M. P. Jadhav
+                  </h6>
+                  <p className="text-muted small mb-1">
+                    M.Sc., Ph.D.
+                  </p>
+                  <span className="badge bg-gold text-dark mb-2">
+                    Professor
+                  </span>
+                  <p className="dept-label mb-0 text-uppercase">
+                    Mathematics
+                  </p>
+                  <a href="mailto:science@college.edu" className="mail-link mt-2">
+                    <i className="bi bi-envelope-at-fill"></i> Contact Email
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* FACULTY 4 */}
+            <div className="col-6 col-md-4 col-lg-3">
+              <div className="faculty-card text-center shadow-sm">
+                <div className="img-box">
+                  <img
+                    src={f2}
+                    alt="Academic Leader"
+                  />
+                </div>
+                <div className="p-3">
+                  <h6 className="mb-1 text-maroon fw-bold">
+                    Prof. N. R. Patil
+                  </h6>
+                  <p className="text-muted small mb-1">
+                    M.A., M.Phil.
+                  </p>
+                  <span className="badge bg-gold text-dark mb-2">
+                    Program Coordinator
+                  </span>
+                  <p className="dept-label mb-0 text-uppercase">
+                    Civil Services Academy
+                  </p>
+                  <a href="mailto:civil@college.edu" className="mail-link mt-2">
+                    <i className="bi bi-envelope-at-fill"></i> Contact Email
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
       </div>
